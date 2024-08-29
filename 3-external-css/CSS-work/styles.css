@@ -1,0 +1,139 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  #container {
+    display: flex;
+  }
+  .left {
+    width: 30%;
+    background-color: rgb(89, 101, 113);
+    min-height: 748px;
+    padding-top: 250px;
+    text-align: end;
+    padding-right: 20px;
+  }
+  .left h4 {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 2px;
+    font-weight: lighter;
+   
+  }
+  .left p{
+      color: rgb(48, 72, 72);
+      font-size: 20px;
+      margin-bottom: 2px;
+  }
+  .btn{
+      background-color: rgb(89, 101, 113);
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 10px;
+      border: 1.5px solid white;
+      cursor: pointer;
+      
+  }
+  .btn:hover{
+    color: rgb(72, 48, 48);
+  
+  }
+  .right{
+      width: 70%;
+      margin-left: 4%;
+      margin-right: 4%;
+  }
+  .para{
+      margin-top:18px ;
+      text-transform: uppercase;
+      color: lightgrey;
+  }
+  
+  hr{
+    border: 0.2px solid lightgray;
+  }
+  .box1{
+    margin-top: 3%;
+  }
+  h2{
+    font-size: 35px;
+  
+  }
+  .pure1{
+    background-color:rgb(73, 241, 73);
+    padding: 2px;
+    color: white;
+    cursor: pointer;
+  }
+  .pure2{
+    background-color:blue;
+    padding: 2px;
+    color: white; 
+    cursor: pointer;
+  }
+  #txt{
+    color: rgb(92, 168, 198);
+  }
+  .content{
+    display: flex;
+    justify-content: space-between;
+  }
+  .box-right{
+    margin-top: 3%;
+  
+  }
+  .profile {
+    height: 50px;
+    width: 50px; 
+    border-radius: 50%;
+  }
+  .paragraph{
+    margin-top: 8px;
+  }
+  .java{
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border: none;
+    cursor: pointer;
+  }
+  .post1{
+    margin-bottom: 180px;
+  }
+  
+  /* responsive */
+  @media screen and (max-width: 750px) {
+    #container {
+      flex-direction: column;
+      padding: 0;
+    }
+    .left, .right{
+      width: 100%;
+      padding: 10Px;
+    }
+    .left{
+      min-height: auto;
+      text-align: center;
+      padding-top: 20px;
+    }
+    .right{
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    .profile{
+      height: 40px;
+      width: 40px;
+    }
+    h2{
+      font-size: 26px;
+    }
+    .paragraph{
+      font-size: 16px;
+    }
+    .para{
+      font-size: 16px;
+    }
+  }

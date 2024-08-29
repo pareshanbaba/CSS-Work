@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  section{
+    display: flex;
+
+  }
+  .left{
+    height: 700px;
+    width: 20%;
+    text-align: center;
+    padding-top: 300px;
+    background-color: black;
+    padding-left: 10%;
+  }
+  .left h2{
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+ .left p{
+    color: aliceblue;
+    margin-top: 20px;
+  }
+  .btn{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    justify-content: space-between;
+    
+
+  }
+  .btn:hover{
+    color: red;
+  }
+  .right{
+    width: 80%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .para{
+    color: darkgray;
+    margin-top: 15px;
+  }
+  hr{
+    border: 0.5px solid lightgray;
+  }
+  .content{
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn1{
+    color: white;
+    background-color: green;
+
+  }
+  .btn2{
+color: white;
+background-color: blue;
+  }
+  h1{
+    margin-bottom: 10px;
+  }
+  .paragraph{
+    margin-top: 10px;
+  }
+  .img{
+    height: 40px;
+    width: 40px;
+    margin: 30px;
+    border-radius: 50%;
+  }
+  .post-1{
+    margin-bottom: 150px;
+  }
+  .btn3{
+    color: white;
+    background-color: red;
+  }
+  @media screen and (max-width: 750px) {
+    #container {
+      flex-direction: column;
+      padding: 0;
+    }
+    .left, .right{
+      width: 100%;
+      padding: 10Px;
+    }
+    .left{
+      min-height: auto;
+      text-align: center;
+      padding-top: 20px;
+    }
+    .right{
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    .profile{
+      height: 40px;
+      width: 40px;
+    }
+    h2{
+      font-size: 26px;
+    }
+    .paragraph{
+      font-size: 16px;
+    }
+    .para{
+      font-size: 16px;
+    }
+  }
+  
+  </style>
+</head>
+<body>
+  <section>
+  <div class="left">
+    <h2>A SIMPLE<br>BLOG</h2>
+    <p>Creating a blog<br>layout using Pure</p>
+    <button type="menu" class="btn">Pure</button>
+    <button type="menu" class="btn">Your Library</button>
+  </div>
+  <div class="right">
+    <!-- right part -->
+     <div class="post-1">
+      <p class="para">Pinned post</p>
+      <hr />
+      <div class="content">
+        <div class="box1">
+          <h1>Introducing pure</h1>
+          <p>by <span class="span">tilo mitro</span> under 
+            <button type="menu" class="btn1">CSS</button>
+            <button type="menu" class="btn2">Pure</button></p>
+            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="span">Neque autem reiciendis nisi,</span>
+               aspernatur incidunt architecto sequi harum quia, esse accusantium quidem. Eos earum ad
+                facilis explicabo voluptate beatae consequuntur est.</p>
+        </div>
+        <div class="box-right">
+          <img src="flower2.jpg" class="img"/>
+         </div>
+      </div>
+     </div>
+     <div class="post-2">
+      <p class="para">Recent post</p>
+      <hr />
+      <div class="content">
+        <div class="box1">
+          <h1>Introducing pure</h1>
+          <p>by <span class="span">tilo mitro</span> under 
+            <button type="menu" class="btn3">JavaScript</button></p>
+            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="span">Neque autem reiciendis nisi,</span>
+               aspernatur incidunt architecto sequi harum quia, esse accusantium quidem. Eos earum ad
+                facilis explicabo voluptate beatae consequuntur est.</p>
+        </div>
+        <div class="box-right">
+          <img src="flower2.jpg" class="img"/>
+         </div>
+      </div>
+     </div>
+  </div>
+  </section>
+</body>
+</html>

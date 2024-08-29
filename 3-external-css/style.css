@@ -1,0 +1,125 @@
+body{
+    margin: 0px;
+}
+h1{
+    color: red;
+    font-size: 70px;
+    text-align: center;
+    margin: 18px;
+}
+#topnav{
+    margin: 0px;
+    background-color: rgb(13, 13, 168);
+    padding: 0px 10% 0px;
+    text-align: center;
+    top:0px;
+    position: sticky;
+}
+#topnav li{
+    display: inline-block;
+    padding: 17px 40px 17px;
+}
+#topnav li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+#topnav li:{
+    background: olivedrab;
+    cursor: pointer;
+
+}
+@keyframes mybanner {
+    25%{background-image: url('flower.jpg'); color: green; font-size: 40px;}
+    50%{background-image: url('flower2.jpg'); color: red; font-size: 70px;}
+    70%{background-image: url('flower3.jpg'); color: pink; font-size: 80px;}
+  
+    
+}
+#banner{
+    height: 250px;
+    padding: 100px;
+    text-align: center;
+    background-image: url('flower.jpg');
+    background-size: 100% 100%;
+    animation: mybanner;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    font-size: 80px;
+    color: yellow;
+    text-align: left;
+    
+}
+#container{
+    width: 80%;
+    min-height: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    border-top: 10px dashed pink;
+    background-color: cornflowerblue;
+    color: white;
+    min-height: 130px;
+    
+}
+#doublecolumn{
+    column-count: 2;
+    text-align: justify;
+}
+.homepic{
+    margin: 2%;
+    width: 20.7%;
+    height: 250px;
+    border-radius: 10%;
+
+}
+h2{
+    text-align: center;
+    color: blue;
+}
+fieldset{
+    width: 400px;
+    margin: 40px auto 50px;
+    border: 5px solid red;
+    padding: 30px;
+    border-radius: 0px 100px 0px 100px;
+}
+legend{
+    padding: 6px 20px 6px;
+    background-color: purple;
+    color: white;
+    font-size: 22px;
+}
+.row{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 10%;
+}
+#centerblock{
+    text-align: center;
+    padding: 15px;
+}
+.smallinput{
+    height: 30px !important;
+
+}
+label{
+    font-weight: bold;
+}
+button{
+    padding: 7px 20px 7px;
+    color: white;
+    background-color: darkred;
+    font-size: 16px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+button:focus{
+    background: black;
+}

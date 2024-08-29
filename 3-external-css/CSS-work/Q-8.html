@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prblm-4</title>
+    <style>*{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .header{
+        height: 80px;
+        padding: 20px 10px 20px;
+    }
+    .header h3{
+        padding-left: 80px;
+        font-size: 25px;
+    }
+    .nav-bar ul{ 
+        display: flex;
+        justify-content: space-between;
+        list-style-type:none;
+        background-color: black;
+        height: 35px;
+        text-align: center;
+        padding-top: 9px;
+    }
+    .nav-bar ul li a{
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+    }
+    .nav-bar ul li a:hover{
+        color: aqua;
+    }
+    
+    #home{
+        margin-left: 25px;
+    }
+    #contact{
+        margin-right: 25px;
+    }
+    #main-content{
+        display: flex;
+        justify-content: space-around;
+    }
+    .left{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 15px;
+        
+    }
+    
+    .pick1{
+        /* margin: 1%; */
+        height: 230px;
+        width: 40%;
+        margin-left: 0%;
+        float: left;
+        margin-right: 2%;
+        margin-top: 1%;
+    }
+    .right{
+        width: 30%;
+        margin-left: 5px;
+        margin-right: 10%;
+        margin-top: 15px;
+    }
+    .right h2{
+        text-align: center;
+    }
+    .photography{
+        margin-top: 10px;
+    }
+    .ballon{
+        height: 150px;
+        width: 40%;
+    }
+    
+    @media screen and (max-width:750px){
+        .nav-bar ul{
+            flex-direction: column;
+            height: auto;
+            padding-top: 0;
+        }
+        .nav-bar ul li{
+            margin: 10px 0px;
+           
+        }
+        #home,
+        #contact{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        /* responsive main-section */
+    
+        #main-content{
+            flex-direction: column;
+        }
+        .left, .right{
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 15px;
+        }
+        .photography{
+            display: grid;
+            grid-template-columns: auto;
+            
+        }
+        .ballon {
+            width: 60%;
+            height: auto;
+            margin-bottom: 10px;
+           
+        }
+        
+    }</style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3>My exciting website!</h3>
+      </div>
+      <div class="nav-bar">
+        <ul>
+          <li id="home"><a href="Home"> Home</a></li>
+          <li><a href="Blog"> Blog</a></li>
+          <li><a href="about"> About us </a></li>
+          <li><a href="history"> Our History </a></li>
+          <li id="contact"><a href="contact"> Contacts </a></li>
+        </ul>
+      </div>
+      <section id="main-content">
+        <div class="left">
+          <h2>An Exciting Blog Post</h2>
+          <p>
+            <img src="flower2.jpg" alt="ballons" class="pick1" />
+            
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
+            dignissimos temporibus blanditiis rem tempore ipsum sit, sapiente
+            fuga explicabo aut vero? Non placeat laboriosam, perferendis
+            assumenda nihil saepe quaerat omnis? Minima nulla eligendi quia
+            omnis id architecto illum eius tempore porro fugit sit, consequatur
+            natus vero possimus sequi necessitatibus commodi consequuntur amet
+            sunt pariatur explicabo distinctio saepe aperiam deserunt! <br/>Et veniam
+            laborum in earum reiciendis obcaecati quisquam eos, corrupti
+            similique facilis quia error saepe nulla excepturi! Optio neque
+            reprehenderit error. Accusamus, libero illo necessitatibus ullam sit
+            atque recusandae! Quod veritatis quae itaque aperiam id ipsam quas
+            rem magnam, impedit odio omnis corrupti praesentium eveniet iusto.
+            Velit, beatae commodi. Dolorem blanditiis aliquam cum perferendis
+            nam error eveniet veniam accusamus magnam dignissimos non qui, eaque
+            impedit doloribus<br/> <br/> hic eius consequatur nostrum quam tempora pariatur
+            aspernatur quis? Ratione aliquam quaerat non maxime, libero delectus
+            mollitia quam asperiores quo pariatur doloribus tempora dolore sit
+            officia itaque quibusdam quis. Ipsa aliquam voluptate eos aliquid
+            velit magnam alias fuga, asperiores deleniti esse doloremque earum,
+            animi cum incidunt! Eius ipsam laboriosam quam iste excepturi ipsa
+            voluptate impedit provident soluta magnam quaerat tempora, animi
+            assumenda modi architecto, ducimus facilis maxime ex! Atque veniam
+            adipisci molestiae sunt, mollitia minus. Accusamus, sed ullam
+            officia ab aspernatur voluptas sit ut tenetur, magni minus autem
+            modi nostrum aliquam <br/>expedita dolore temporibus eveniet laboriosam
+            vel! Consequatur mollitia nulla provident cumque temporibus
+            laboriosam aspernatur velit, perspiciatis excepturi facere ullam
+            libero in at soluta nemo dolorum, sequi eos quia rem pariatur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo minus,
+            sit libero numquam quod ratione omnis magnam deserunt! Odio commodi
+            repellendus voluptas iste quisquam omnis ad officiis exercitationem
+            eum ducimus.
+          </p>
+        </div>
+        <div class="right">
+          <h2>Photography</h2>
+          <div class="photography">
+            <img src="flower2.jpg" alt="" class="ballon" />
+            <img src="flower3.jpg" alt="" class="ballon" />
+            <img src="flower2.jpg" alt="" class="ballon" />
+            <img src="flower2.jpg" alt="" class="ballon" />
+            <img src="flower2.jpg" alt="" class="ballon" />
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-style: italic;
+        }
+        #container{
+            text-align: center;
+            color: black;
+          
+        }
+        hr{
+            margin-left: 30%;
+            margin-right: 25%;
+            border: 1px solid black;
+        }
+        h4{
+            font-size: 15;
+
+        }
+        #main{
+            display: flex;
+            text-align: center;
+            margin-top: 70px;
+            margin-left: 30%
+            
+        }
+        #left{
+    margin-right: 45px;
+    border: 2px solid blue;
+    border-radius: 10%;
+    padding: 10px 20px 10px;
+    box-shadow: 0px -10px 10px blue;
+        }
+        #right{
+    margin-right: 40px;
+    border: 2px solid green;
+    border-radius: 10%;
+    padding: 10px 20px 10px;
+    box-shadow: 0px -10px 10px green;
+    
+        }
+    .btn1{
+        background-color: blue;
+        color: white;
+        border-radius: 15px;
+        width: 150px;
+
+    }
+    .btn2{
+        background-color: green;
+        color: white;
+        border-radius: 15px; 
+        width: 150px;
+    }
+    .first{
+        color: blue;
+    }
+    .second{
+        color: green;
+    }
+    @media screen and (max-width: 700px){
+        #main{
+            display: block !important;
+            margin-left: 20%;
+            
+        }
+        #right{
+            margin-top: 10px;
+            margin-right: -90;
+            margin-top: 30px;
+        }
+       
+        }
+        hr{
+            margin-left: 100px;
+            margin-right: 60px;
+        }
+
+    
+
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <h2>Contact Us</h2>
+        <hr/>
+       <h4>Any question we'd love to hear from you</h4>
+       <div id="main">
+<div id="left">
+    <h3>Customer Care</h3>
+    <p>Our Supoort team is spread all over the<br>world to give you fast response</p>
+    <button type="submit" class="btn1">Submit a Request</button>
+    <h5 class="first">Frequently asked question</h5>
+</div>
+<div id="right">
+    <h3>Customer Care</h3>
+    <p>Get in touch with our sales and marketing<br>team to see how can work together</p>
+    <button type="submit" class="btn2">Contact Sales</button>
+    <h5 class="second">views plans</h5>
+</div>
+</div>
+    </section>
+</body>
+</html>

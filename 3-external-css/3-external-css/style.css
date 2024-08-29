@@ -1,0 +1,110 @@
+body {
+  margin: 0px;
+}
+#topnav {
+  margin: 0px;
+  background-color: rgb(6, 6, 115);
+  padding: 0px 10% 0px;
+  top: 0;
+  position: sticky;
+}
+#topnav li {
+  display: inline-block;
+  padding: 20px 40px 20px;
+}
+#topnav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+#topnav li:hover {
+  cursor: pointer;
+  background-color: chartreuse;
+  box-shadow: 0px 0px 30px rgba(174, 30, 30, 0.6);
+}
+h1 {
+  color: blue;
+  font-size: 70px;
+  text-align: center;
+  margin: 18px;
+}
+/* animation */
+@keyframes mybanner {
+  25% {
+    background-image: url("1.jpg");
+    color: red;
+    font-size: 40px;
+  }
+  50% {
+    background-image: url("4.jpg");
+    color: pink;
+    font-size: 70px;
+  }
+  75% {
+    background-image: url("3.jpg");
+    color: darkgray;
+    font-size: 80px;
+  }
+}
+#banner {
+  height: 250px;
+  padding: 100px;
+  text-align: center;
+  background-image: url("2.jpg");
+  background-size: 100% 100%;
+  font-size: 100px;
+  color: yellowgreen;
+  animation: mybanner;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+#container{
+    /* width: 80%;
+    font-size: 70px;
+    text-align: center; */
+    min-height: 500px;
+    margin: auto;
+    width: 80%;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    border-top: 10px dashed pink;
+    background-color: chocolate;
+    min-height: 130px;
+}
+#doublecolumn{
+  column-count: 2;
+  text-align: justify;
+}
+.homepic{
+  margin: 2%;
+  width: 20.7%;
+  height: 250px;
+  border-radius: 10px;
+}
+h2{
+  text-align: center;
+  font-size: 40px;
+  color: blue;
+}
+/* Service Page  */
+#myservice{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.service{
+  text-align: center;
+  margin: 30px;
+}
+.service p{
+  text-align: justify;
+}
+.service .fa{
+  color: purple;
+}
+.service h3{
+  color: blue;
+  font-size: 25px;
+}
+
